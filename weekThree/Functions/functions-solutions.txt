@@ -1,0 +1,57 @@
+Question 1 solution
+
+function checkout(cardBalance, price) {
+  if (price > cardBalance) {
+    return "Sorry, can't afford it.";
+  } else {
+    const newBalance = cardBalance - price;
+    return `Thanks for your purchase! Your new card balance is ${newBalance}.`;
+  }
+}
+
+Question 2 solution
+
+This function takes two parameters, cardBalance and price, which represent the current balance on the card and the cost of the item being purchased, respectively.
+It then uses an if statement to check if the price is greater than the cardBalance. If it is, the function returns the message "Sorry, can't afford it.". If not, the function calculates the newBalance by subtracting the price from the cardBalance and returns the message "Thanks for your purchase! 
+Your new card balance is [new balance].", where [new balance] is replaced with the actual value of newBalance.
+
+Question 2 solution 
+function loopUntilX(x) {
+  for (let i = 0; i < x; i++) {
+    console.log(`Counting up: ${i + 1}!`);
+  }
+  return "Countdown complete! Blast off!";
+}
+
+Question 3 solution
+
+Explanation:
+
+The function affordTrip takes in two parameters: budget and tripCost
+It then checks if tripCost is greater than budget using an if statement
+If tripCost is greater than budget, the function returns the message "Sorry, we can't afford this trip."
+If tripCost is not greater than budget, the function returns a string with a message "Yay! We can afford this trip and we still have [remaining budget] left." along with the calculated remaining budget using template literals.
+
+
+function affordTrip(budget, tripCost) {
+  if (tripCost > budget) {
+    return "Sorry, we can't afford this trip.";
+  } else {
+    return `Yay! We can afford this trip and we still have ${budget - tripCost} left.`;
+  }
+}
+
+
+Question 4 solution
+function isMagicColor(color) {
+  if (color.toLowerCase() === "blue") {
+    return "You found the magic color!";
+  } else {
+    return "Sorry, try again.";
+  }
+}
+Explanation:
+The function isMagicColor takes in a parameter color. We then use the toLowerCase() method to convert the string to all lowercase. This is done so that we can compare the string to "blue" without worrying about capitalization.
+
+Next, we use an if-else statement to check if the converted color string is equal to "blue". If it is, we return "You found the magic color!". If it's not, we return "Sorry, try again.".
+

@@ -15,3 +15,8 @@
  */
 
 // Question 3
+/** 
+ * Can We Afford A Trip?: Write a function named affordTrip that accepts 2 parameters named budget and tripCost. If the tripCost is more than the budget, return the message "Sorry, we can't afford this trip."; otherwise, return the message "Yay! We can afford this trip and we still have [remaining budget] left."
+
+For example, affordTrip(1000, 800) should return "Yay! We can afford this trip and we still have 200 left."
+and affordTrip(1000, 1200) should return "Sorry, we can't afford this trip." */
