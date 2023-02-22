@@ -6,6 +6,14 @@ This is the git repository for the class. It will be updated on a class by class
 git clone https://github.com/YOUR-USERNAME/PromineoTech.git
 ```
 
+## How to Fork a Repository
+
+1. Go to the repository that you want to fork on GitHub.
+2. Click the "Fork" button in the top right corner of the page.
+3. Choose the account you want to fork the repository to.
+4. Wait for the repository to be forked to your account.
+5. You now have your own fork of the repository and can make changes to it.
+
 Add the original repository as a remote to your forked repository:
 
 ```bash
