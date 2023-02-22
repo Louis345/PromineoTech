@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>EXERCISES Events</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Sumana&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+    </style>
+
+    <script src="forms.js" defer></script>
+  </head>
+
+  <body class="d-flex flex-column">
+    <section class="bg-warning pt-4 pb-2 flex-fill">
+      <div class="container">
+        <!-- Capture what the user is type here -->
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter mystery text here"
+          aria-label="Enter mystery text here"
+        />
+
+        <!-- Display whatever text the user types in the textbox above inside the <div></div> -->
+        <div class="card bg-warning"></div>
+      </div>
+    </section>
+
+    <section class="bg-dark pt-4 pb-2 flex-fill">
+      <div class="container">
+        <!-- Handle this form -->
+        <form class="form-group">
+          <div class="input-group">
+            <input
+              type="search"
+              placeholder="Search for oceans near Albany, NY"
+              aria-label="Search for oceans near Albany, NY"
+              class="form-control"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Display "No results for ___ found" inside of this <p></p> -->
+        <p class="text-white"></p>
+      </div>
+    </section>
+
+    <section class="bg-light pt-4 pb-4 flex-fill">
+      <div class="container d-flex justify-content-center">
+        <form>
+          <div class="form-inline">
+            <div class="form-check form-check-inline">
+              <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
+              <input class="form-check-input is-invalid" type="checkbox" />
+              <label class="form-check-label" for="terms"
+                >I Agree to the Terms and Conditions</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-primary">Continue</button>
+          </div>
+
+          <!-- Only display me if the user did not agree to the terms and conditions -->
+          <div class="text-danger">
+            <small>You must agree to the terms and conditions</small>
+          </div>
+
+          <!-- Only display after the user clicks on the "Continue" button and he has agreed to the terms -->
+          <div class="text-success">
+            <small>Thank you for signing up!</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

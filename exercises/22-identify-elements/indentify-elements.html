@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="bulma-pricingtable.min.css" />
+    <title>EXERCISES Events</title>
+    <script src="indentify-elements.js" defer></script>
+  </head>
+  <body>
+    <!-- Hide me before the user selects a plan -->
+    <!-- I put an ID for the notification here -->
+    <div class="notification is-primary">
+      <button class="delete"></button>
+      <!-- When the user selects a plan, put a success message here. For example: -->
+      <!-- Thank you for purchasing the Enterprise plan! -->
+      <span id="notification"></span>
+    </div>
+
+    <!-- @source https://wikiki.github.io/components/pricingtable/ -->
+    <div class="pricing-table">
+      <div class="pricing-plan is-warning">
+        <div class="plan-header">Community</div>
+        <div class="plan-price">
+          <span class="plan-price-amount"
+            ><span class="plan-price-currency">$</span>5</span
+          >/month
+        </div>
+        <div class="plan-items">
+          <div class="plan-item">20GB Storage</div>
+          <div class="plan-item">1 Domain</div>
+          <div class="plan-item">1GB Bandwidth</div>
+          <div class="plan-item">-</div>
+        </div>
+        <div class="plan-footer">
+          <!-- Clicking on this button should show a "Thank You" notification above -->
+          <button class="button is-fullwidth">Select</button>
+        </div>
+      </div>
+
+      <div class="pricing-plan is-primary">
+        <div class="plan-header">Professional</div>
+        <div class="plan-price">
+          <span class="plan-price-amount"
+            ><span class="plan-price-currency">$</span>10</span
+          >/month
+        </div>
+        <div class="plan-items">
+          <div class="plan-item">200GB Storage</div>
+          <div class="plan-item">5 Domains</div>
+          <div class="plan-item">1TB Bandwidth</div>
+          <div class="plan-item">100 Email Boxes</div>
+        </div>
+        <div class="plan-footer">
+          <!-- Clicking on this button should show a "Thank You" notification above -->
+          <button class="button is-fullwidth">Select</button>
+        </div>
+      </div>
+
+      <div class="pricing-plan is-danger">
+        <div class="plan-header">Enterprise</div>
+        <div class="plan-price">
+          <span class="plan-price-amount"
+            ><span class="plan-price-currency">$</span>50</span
+          >/month
+        </div>
+        <div class="plan-items">
+          <div class="plan-item">2TB Storage</div>
+          <div class="plan-item">50 Domains</div>
+          <div class="plan-item">1TB Bandwidth</div>
+          <div class="plan-item">1000 Email Boxes</div>
+        </div>
+        <div class="plan-footer">
+          <button class="button is-fullwidth">Select</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

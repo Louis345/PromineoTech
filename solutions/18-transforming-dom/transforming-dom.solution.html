@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISES Transforming DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="transforming-dom.js" defer></script>
+  </head>
+  <body>
+    <div class="container mt-3 mb-3">
+      <div class="alert alert-danger">
+        <p>
+          Edit the <code class="text-dark">&lt;img&gt;</code> tag below so that
+          it displays an image. (You can use the image
+          <a
+            href="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
+            target="_blank"
+            >https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif</a
+          >
+          or any other image of your choice.)
+        </p>
+        <!-- Adding an ID to the button so that I can target it with JavaScript. An ID is recommend when you need to target a single element on the page. -->
+        <img height="250" alt="Hard at Work" id="image" />
+      </div>
+
+      <div class="alert alert-warning">
+        Change the link below so that when clicked on, it links to
+        <em>https://developer.mozilla.org/en-US/docs/Web/JavaScript</em>.
+        <div>
+          <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+          <a
+            href="https://www.w3schools.com/js/default.asp"
+            target="_blank"
+            id="javascriptLink"
+            >Read the (unofficial) JavaScript manual</a
+          >
+        </div>
+      </div>
+
+      <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+      <div class="alert alert-success" id="victorious">
+        Change the text inside this <em>&lt;div&gt;</em> to say "I am
+        victorious!"
+      </div>
+
+      <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+      <div class="alert alert-info" id="inlineStyles">
+        Change the background color of this <em>&lt;div&gt;</em> to another
+        color using inline styles.
+      </div>
+
+      <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+      <div class="alert alert-danger" id="dangerNoMore">
+        Change the text color of this <em>&lt;div&gt;</em> to another color by
+        changing the class.
+        <a
+          href="https://getbootstrap.com/docs/4.5/utilities/colors/"
+          target="_blank"
+          >See Bootstrap colors.</a
+        >
+      </div>
+
+      <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+      <div class="alert alert-warning" id="hideMe">
+        Hide this <em>&lt;div&gt;</em> using inline styles.
+      </div>
+
+      <p class="mb-0">
+        Show the hidden <code>&lt;div&gt;</code> below by modifying the
+        <em>class</em> in some way.
+      </p>
+      <div class="alert alert-success hidden" id="abraKadabra">Peek a boo!</div>
+
+      <div class="alert alert-info mt-5">
+        Using conditional logic (e.g. an if statement), change the
+        <em>&lt;div&gt;</em> below to say "&check; blue" if
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <button class="btn btn-primary ml-1 m4-1" type="button" id="thisButton">
+          this button
+        </button>
+        has class <em>btn-primary</em>.
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <div class="text-dark" id="buttonOutput">
+          <!-- if button has class "btn-primary", put text here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

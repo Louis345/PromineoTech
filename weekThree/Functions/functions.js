@@ -15,8 +15,18 @@
  */
 
 // Question 3
-/** 
+/**
  * Can We Afford A Trip?: Write a function named affordTrip that accepts 2 parameters named budget and tripCost. If the tripCost is more than the budget, return the message "Sorry, we can't afford this trip."; otherwise, return the message "Yay! We can afford this trip and we still have [remaining budget] left."
 
 For example, affordTrip(1000, 800) should return "Yay! We can afford this trip and we still have 200 left."
 and affordTrip(1000, 1200) should return "Sorry, we can't afford this trip." */
+
+
+// Question 4
+/**
+ * Let's Find the Magic Color!: Write a function named isMagicColor that accepts one parameter named color. If the color is "blue" (regardless of capitalization), return the message "You found the magic color!"; otherwise, return the message "Sorry, try again."
+
+For example, isMagicColor("Blue") should return "You found the magic color!"
+and isMagicColor("red") should return "Sorry, try again." */
+
+// Question 5

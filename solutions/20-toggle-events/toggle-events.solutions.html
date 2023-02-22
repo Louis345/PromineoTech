@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>EXERCISES Events</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Sumana&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Sumana", serif;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <script src="toggle-events.js" defer></script>
+  </head>
+
+  <body>
+    <section id="acceptCookiesPopup" class="bg-dark text-white sticky">
+      <div class="container pt-4 pb-4">
+        <p>
+          We use cookies to give you the best online experience, measure your
+          visits to our sites and to enable marketing activities (including with
+          our marketing partners).
+        </p>
+        <button id="acceptCookiesButton" class="btn btn-success">
+          Accept Cookies
+        </button>
+      </div>
+    </section>
+
+    <section class="container pt-4 pb-4">
+      <article>
+        <h1 class="h2">
+          Icy Road Conditions Lead To Multi-Deer Pileup On Highway
+        </h1>
+        <p class="text-muted">
+          Source:
+          <a
+            href="https://www.theonion.com/icy-road-conditions-lead-to-multi-deer-pileup-on-highwa-1839726987"
+            target="_blank"
+            >The Onion</a
+          >
+        </p>
+        <div>
+          <a
+            href="https://www.theonion.com/icy-road-conditions-lead-to-multi-deer-pileup-on-highwa-1839726987"
+            target="_blank"
+            ><img
+              src="https://i.kinja-img.com/gawker-media/image/upload/c_scale,f_auto,fl_progressive,q_80,w_1600/coglj48ibzx53ywsrfdi.jpg"
+              alt="Multi-Deer Pileup"
+              width="300"
+              height="227"
+          /></a>
+        </div>
+        <p>Highway I-87 is now closed.</p>
+
+        <!-- This is the button that will toggle the comments -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <p>
+          <button id="toggleComments" class="btn btn-primary">
+            View Comments
+          </button>
+        </p>
+
+        <!-- This is the comment section you need to toggle -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <div id="comments" class="card card-body hidden">
+          <div class="media">
+            <img
+              src="https://i.pravatar.cc/150?img=8"
+              alt=""
+              width="60"
+              height="60"
+              class="mr-3"
+            />
+            <div class="media-body">
+              This comment doesn't add any value to the conversation.
+              <div class="text-muted"><small>December 5, 2022</small></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

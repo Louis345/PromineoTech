@@ -4,8 +4,7 @@ function checkout(cardBalance, price) {
   if (price > cardBalance) {
     return "Sorry, can't afford it.";
   } else {
-    const newBalance = cardBalance - price;
-    return `Thanks for your purchase! Your new card balance is ${newBalance}.`;
+    return `Thanks for your purchase! Your new card balance is ${cardBalance - price}.`;
   }
 }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>EXERCISES Events</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Sumana&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+
+      /**
+       * I am adding the class "hidden" so that I can toggle the validation messages 
+       * for the agree to terms problem.
+       */
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <script src="forms.js" defer></script>
+  </head>
+
+  <body class="d-flex flex-column">
+    <section class="bg-warning pt-4 pb-2 flex-fill">
+      <div class="container">
+        <!-- Capture what the user is type here -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter mystery text here"
+          aria-label="Enter mystery text here"
+          id="mysteryText"
+        />
+
+        <!-- Display whatever text the user types in the textbox above inside the <div></div> -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <div class="card bg-warning" id="mysteryTextDisplay"></div>
+      </div>
+    </section>
+
+    <section class="bg-dark pt-4 pb-2 flex-fill">
+      <div class="container">
+        <!-- Handle this form -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <form class="form-group" id="handleThisForm">
+          <div class="input-group">
+            <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+            <input
+              type="search"
+              placeholder="Search for oceans near Albany, NY"
+              aria-label="Search for oceans near Albany, NY"
+              class="form-control"
+              id="oceanInput"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Display "No results for ___ found" inside of this <p></p> -->
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <p class="text-white" id="oceanOutput"></p>
+      </div>
+    </section>
+
+    <section class="bg-light pt-4 pb-4">
+      <div class="d-flex justify-content-center">
+        <!-- Adding an ID to the button so that I can target it with JavaScript. -->
+        <form id="termsForm">
+          <div class="form-inline">
+            <div class="form-check form-check-inline">
+              <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
+              <!--
+                1.) Adding an ID to the button so that I can target it with JavaScript.
+                2.) Removing the class "is-invalid" so that the label is not red when the page initially loads
+              -->
+              <input class="form-check-input" type="checkbox" id="terms" />
+              <label class="form-check-label" for="terms"
+                >I Agree to the Terms and Conditions</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-primary">Continue</button>
+          </div>
+
+          <!-- Only display me if the user did not agree to the terms and conditions -->
+          <!--
+            Adding:
+            1.) an ID to the button so that I can target it with JavaScript.
+            2.) the class "hidden" so that this message is hidden when the page initially loads.
+          -->
+          <div class="text-danger hidden" id="termsError">
+            <small>You must agree to the terms and conditions</small>
+          </div>
+
+          <!-- Only display after the user clicks on the "Continue" button and he has agreed to the terms -->
+          <!--
+            Adding:
+            1.) an ID to the button so that I can target it with JavaScript.
+            2.) the class "hidden" so that this message is hidden when the page initially loads.
+          -->
+          <div class="text-success hidden" id="termsSuccess">
+            <small>Thank you for signing up!</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

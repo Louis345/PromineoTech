@@ -1,0 +1,22 @@
+{
+  "name": "PromineoTech",
+  "version": "1.0.0",
+  "description": "CanCode Communities' JavaScript Fundamentals Class Fall 2022",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha",
+    "testAll": "mocha test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  }
+}
