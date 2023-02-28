@@ -37,3 +37,26 @@ npm install
 [Callback](https://slides.com/jamaltaylor/deck-2a39e3)
 [Variables](https://slides.com/jamaltaylor/deck-dbca4e)
 [Promises](https://slides.com/jamaltaylor/deck-1da105)
+
+# Promineo Tech Week 5
+
+#### Slides Links
+
+[Object Oriented Programming](https://slides.com/jamaltaylor/deck-aaf6bc)
+
+Instructions to install Node.js on a PC:
+
+Visit the official Node.js website at https://nodejs.org
+Download the latest version of Node.js for Windows
+Run the downloaded setup file
+Follow the on-screen instructions to complete the installation process
+Once the installation is complete, open a command prompt and type "node -v" to check if Node.js has been installed successfully
+Type "npm -v" to check if npm has been installed successfully
+
+For MAC:
+
+Open the Terminal application
+Type brew install node to install Node.js using Homebrew, a popular package manager for MAC
+To verify that Node.js was installed correctly, type node -v in the Terminal
+To install npm, type npm install npm@latest -g in the Terminal
+Note: The above instructions assume that you have Homebrew already installed on your MAC. If not, follow the instructions on this page to install Homebrew: https://brew.sh/
