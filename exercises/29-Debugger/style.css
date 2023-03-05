@@ -1,0 +1,9 @@
+#result-display {
+    text-align: center;
+    padding: 20px;
+}
+
+#result-output {
+    font-weight: bold;
+    color: blue;
+}

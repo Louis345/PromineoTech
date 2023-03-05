@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Two Input Addition</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 40px 0;
+        }
+
+        #input-container {
+            display: flex;
+            margin: 40px 0;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        #result-display {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<body>
+    <div class="container">
+        <h1>Two Input Addition Debugging Challenge</h1>
+        <p>Enter two numbers in the input boxes below and click the "Submit" button to see the result of their addition.
+            However, there is a bug in the code and it's your job to use the debugger to find and fix it!</p>
+    <div id="input-container">
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+        <button id="submit-button">Submit</button>
+    </div>
+    <div id="result-display">
+        <h2>Result: <span id="result-output"></span></h2>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
